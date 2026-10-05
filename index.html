@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>عضوية SMC</title>
+
+<style>
+*{
+    box-sizing:border-box;
+    font-family:Arial,Tahoma,sans-serif;
+}
+
+body{
+    margin:0;
+    background:#f3f6f9;
+    color:#17202a;
+}
+
+.header{
+    background:#063b63;
+    color:white;
+    text-align:center;
+    padding:35px 20px;
+}
+
+.logo{
+    width:95px;
+    height:95px;
+    border-radius:50%;
+    background:white;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    font-weight:bold;
+    color:#063b63;
+}
+
+.header h1{
+    margin:18px 0 8px;
+    font-size:25px;
+}
+
+.header p{
+    margin:0;
+    font-size:15px;
+}
+
+.container{
+    max-width:700px;
+    margin:25px auto;
+    padding:0 15px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 4px 18px rgba(0,0,0,.08);
+    margin-bottom:20px;
+}
+
+.title{
+    color:#063b63;
+    font-size:22px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.description{
+    color:#666;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+label{
+    display:block;
+    margin-top:17px;
+    margin-bottom:7px;
+    font-weight:bold;
+}
+
+input,select,textarea{
+    width:100%;
+    padding:13px;
+    border:1px solid #d4dce3;
+    border-radius:9px;
+    font-size:15px;
+    outline:none;
+    background:white;
+}
+
+input:focus,select:focus,textarea:focus{
+    border-color:#063b63;
+}
+
+textarea{
+    min-height:110px;
+    resize:vertical;
+}
+
+.row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+.check{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+    margin-top:20px;
+    line-height:1.7;
+}
+
+.check input{
+    width:auto;
+    margin-top:5px;
+}
+
+button{
+    width:100%;
+    border:0;
+    padding:15px;
+    border-radius:10px;
+    background:#063b63;
+    color:white;
+    font-size:17px;
+    font-weight:bold;
+    cursor:pointer;
+    margin-top:20px;
+}
+
+button:hover{
+    background:#052f4f;
+}
+
+.footer{
+    text-align:center;
+    color:#777;
+    padding:20px;
+    font-size:13px;
+}
+
+@media(max-width:600px){
+    .row{
+        grid-template-columns:1fr;
+    }
+
+    .card{
+        padding:20px;
+    }
+
+    .header h1{
+        font-size:21px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+
+    <div class="logo">SMC</div>
+
+    <h1>منظمة S.M.C التنموية لدعم الشباب</h1>
+
+    <p>بوابة التسجيل الإلكتروني للعضوية</p>
+
+</div>
+
+
+<div class="container">
+
+<div class="card">
+
+<div class="title">
+استمارة طلب العضوية
+</div>
+
+<div class="description">
+مرحباً بك في بوابة التسجيل الإلكتروني لمنظمة S.M.C التنموية لدعم الشباب.
+يرجى تعبئة البيانات التالية بصورة صحيحة ودقيقة، وسيتم مراجعة طلب العضوية من قبل إدارة المنظمة.
+</div>
+
+
+<form>
+
+<div class="row">
+
+<div>
+<label>الاسم الكامل *</label>
+<input type="text" placeholder="اكتب اسمك الكامل" required>
+</div>
+
+<div>
+<label>رقم الهاتف *</label>
+<input type="tel" placeholder="مثال: 09xxxxxxxx" required>
+</div>
+
+</div>
+
+
+<div class="row">
+
+<div>
+<label>البريد الإلكتروني</label>
+<input type="email" placeholder="example@email.com">
+</div>
+
+<div>
+<label>تاريخ الميلاد *</label>
+<input type="date" required>
+</div>
+
+</div>
+
+
+<div class="row">
+
+<div>
+<label>النوع *</label>
+
+<select required>
+<option value="">اختر</option>
+<option>ذكر</option>
+<option>أنثى</option>
+</select>
+
+</div>
+
+
+<div>
+
+<label>الحالة الاجتماعية</label>
+
+<select>
+<option value="">اختر</option>
+<option>أعزب/عزباء</option>
+<option>متزوج/متزوجة</option>
+<option>أخرى</option>
+</select>
+
+</div>
+
+</div>
+
+
+<label>مكان الإقامة *</label>
+
+<input type="text" placeholder="الولاية - المحلية - المنطقة" required>
+
+
+<label>المستوى التعليمي *</label>
+
+<select required>
+
+<option value="">اختر المستوى</option>
+<option>أساس</option>
+<option>ثانوي</option>
+<option>دبلوم</option>
+<option>بكالوريوس</option>
+<option>دراسات عليا</option>
+<option>أخرى</option>
+
+</select>
+
+
+<label>المهنة / العمل</label>
+
+<input type="text" placeholder="اكتب مهنتك أو مجال عملك">
+
+
+<label>مجال اهتمامك داخل المنظمة</label>
+
+<select>
+
+<option value="">اختر المجال</option>
+<option>التطوع والعمل المجتمعي</option>
+<option>الشباب والرياضة</option>
+<option>التعليم والتدريب</option>
+<option>الإعلام والعلاقات العامة</option>
+<option>التنمية</option>
+<option>الإغاثة والعمل الإنساني</option>
+<option>التقنية</option>
+<option>أخرى</option>
+
+</select>
+
+
+<label>هل لديك خبرات تطوعية سابقة؟</label>
+
+<textarea placeholder="اذكر خبراتك التطوعية إن وجدت"></textarea>
+
+
+<label>لماذا ترغب في الانضمام إلى المنظمة؟ *</label>
+
+<textarea placeholder="اكتب سبب رغبتك في الانضمام..." required></textarea>
+
+
+<label>ملاحظات إضافية</label>
+
+<textarea placeholder="أي معلومات أخرى ترغب في إضافتها"></textarea>
+
+
+<div class="check">
+
+<input type="checkbox" required>
+
+<span>
+أقر بأن جميع البيانات التي أدخلتها في هذه الاستمارة صحيحة، وأوافق على مراجعة طلب العضوية وفقاً للوائح المنظمة.
+</span>
+
+</div>
+
+
+<button type="submit">
+إرسال طلب العضوية
+</button>
+
+</form>
+
+</div>
+
+
+<div class="footer">
+© 2026 منظمة S.M.C التنموية لدعم الشباب
+</div>
+
+</div>
+
+</body>
+  </html>
